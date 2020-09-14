@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+a {
+  background-color: transparent;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero {
+  min-height: 100vh;
+  font-weight: 400;
+  color: #272341;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+  text-align: left;
+}
+
+.text-color-main {
+  color: #00cdac;
+}
+
+.cta-btn:link,
+.cta-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn--hero {
+  background-color: #fff;
+  color: #00cdac;
+  border: 2px solid #00cdac;
+  padding: 0.8rem 1.6rem;
+  font-size: 2rem;
+}
+
+.cta-btn-about,
+.cta-btn-contact {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.cta-btn-proj {
+  background-color: #fff;
+  color: #00cdac;
+  border: 2px solid #00cdac;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.8rem;
+  margin-top: 2rem;
+}
+
+.title {
+  margin: 0 0 4.5rem;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-text {
+  width: 55%;
+}
+
+.about-img {
+  width: 40%;
+  align-self: flex-start;
+  margin: 0;
+}
+
+.about {
+  background-color: #02aab0;
+  background-image: linear-gradient(135deg, #02aab0, #00cdac);
+  color: #fff;
+  min-height: 60vh;
+  margin-top: 0;
+}
+
+.about-container,
+.projects-container {
+  padding: 2.5rem 0.9375rem 2.5rem 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about p {
+  padding-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.project-info {
+  width: 35%;
+  text-align: left;
+}
+
+.project-image {
+  width: 60%;
+}
+
+.section-color,
+.section-color p {
+  color: #272341 !important;
+}
+
+.project-title {
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  font-size: 2.5rem;
+}
+
+.projects p {
+  margin-bottom: 1.5rem !important;
+}
+
+.project-main + .project-main {
+  padding-top: 3.125rem;
+}
+
+.contact {
+  background-image: linear-gradient(135deg, #02aab0, #00cdac);
+  padding: 5rem 0 10rem;
+  margin-top: 5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-wrapper-text {
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 4.8rem 0;
+}
+
+.fab,
+.fas {
+  color: #fff !important;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.social-links,
+.social-links a {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  text-decoration: none;
+}
+
+.link + .link {
+  margin-left: 3rem;
+}
+
+@media (max-width: 1328px) {
+  .project-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-info {
+    display: inline-block;
+    width: 100%;
+  }
+  .project-info a {
+    margin-bottom: 3rem;
+  }
+
+  .project-image {
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width:990px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-img {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .about-text {
+    width: 100%;
+   
+  }
+}
